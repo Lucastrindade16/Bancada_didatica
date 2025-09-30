@@ -1,0 +1,44 @@
+# --- Ambiente Virtual ---
+# Nunca envie a pasta do ambiente virtual para o repositório.
+# Ela é específica para cada máquina e pode ser muito grande.
+.venv/
+venv/
+env/
+
+# --- Arquivos de Segredos e Configuração Local ---
+# Contém senhas, chaves de API e outras informações sensíveis.
+# É uma FALHA DE SEGURANÇA GRAVE enviar este arquivo.
+# Crie um arquivo .env.example para mostrar a estrutura necessária.
+.env
+
+# --- Cache e Arquivos Compilados do Python ---
+# Gerados automaticamente pelo Python para otimização. Não são necessários.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Configurações de IDEs e Editores ---
+# Evita conflitos de configuração pessoal entre desenvolvedores.
+.vscode/
+.idea/
+
+# --- Arquivos de Banco de Dados Locais ---
+# Caso você use um banco de dados local como SQLite para testes.
+*.db
+*.sqlite3
+
+# --- Logs ---
+# Arquivos de log que sua aplicação pode gerar.
+*.log
+*.log.*
+
+# --- Artefatos de Build e Distribuição ---
+# Pastas geradas ao empacotar o projeto para distribuição.
+build/
+dist/
+*.egg-info/
+
+# --- Arquivos Temporários do Sistema Operacional ---
+.DS_Store # macOS
+Thumbs.db # Windows
